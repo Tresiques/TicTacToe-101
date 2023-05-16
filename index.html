@@ -19,9 +19,19 @@
       <table>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='top-left' onclick="handleClick(this)" ></td>
+          <td id='top-left' onclick={handleClick(this)} ></td>
           <td id='top-middle'></td>
           <td></td>
+        </tr>
+        <tr>
+          <td id='middleLeft' "></td>
+          <td id='middle-middle' onclick={handleClick(this)}></td>
+          <td id='middleRight' onclick={handleClick(this)}></td>
+        </tr>
+        <tr>
+          <td id='bottomLeft' onclick="handleClick(this)"></td>
+          <td id='bottomCenter' onclick="handleClick(this)"></td>
+          <td id='bottomRight' onclick="handleClick(this)"></td>
         </tr>
         <!-- @TODO create new rows and cells for the rest of your TTT board. -->
         <!-- @TODO give each new cell an id & an event listener to call the "handleClick" function -->
